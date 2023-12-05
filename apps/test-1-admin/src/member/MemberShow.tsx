@@ -21,7 +21,6 @@ export const MemberShow = (props: ShowProps): React.ReactElement => {
         <DateField source="createdAt" label="Created At" />
         <TextField label="email" source="email" />
         <TextField label="ID" source="id" />
-        <TextField label="member_id" source="memberId" />
         <TextField label="name" source="name" />
         <TextField label="sex" source="sex" />
         <DateField source="updatedAt" label="Updated At" />

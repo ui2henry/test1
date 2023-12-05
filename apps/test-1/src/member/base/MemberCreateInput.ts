@@ -52,14 +52,6 @@ class MemberCreateInput {
   email?: string | null;
 
   @ApiProperty({
-    required: true,
-    type: String,
-  })
-  @IsString()
-  @Field(() => String)
-  memberId!: string;
-
-  @ApiProperty({
     required: false,
     type: String,
   })

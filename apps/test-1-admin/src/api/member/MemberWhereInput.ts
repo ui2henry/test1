@@ -7,7 +7,6 @@ export type MemberWhereInput = {
   age?: StringNullableFilter;
   email?: StringNullableFilter;
   id?: StringFilter;
-  memberId?: StringFilter;
   name?: StringNullableFilter;
   sex?: StringNullableFilter;
 };

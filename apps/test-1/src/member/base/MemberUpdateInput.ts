@@ -60,17 +60,6 @@ class MemberUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  memberId?: string;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
   name?: string | null;
 
   @ApiProperty({

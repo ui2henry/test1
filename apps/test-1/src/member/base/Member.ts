@@ -65,14 +65,6 @@ class Member {
   id!: string;
 
   @ApiProperty({
-    required: true,
-    type: String,
-  })
-  @IsString()
-  @Field(() => String)
-  memberId!: string;
-
-  @ApiProperty({
     required: false,
     type: String,
   })

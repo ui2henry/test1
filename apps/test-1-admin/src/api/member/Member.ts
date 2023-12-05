@@ -6,7 +6,6 @@ export type Member = {
   createdAt: Date;
   email: string | null;
   id: string;
-  memberId: string;
   name: string | null;
   sex: string | null;
   updatedAt: Date;

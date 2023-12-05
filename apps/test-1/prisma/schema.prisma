@@ -24,7 +24,6 @@ model Member {
   createdAt DateTime  @default(now())
   email     String?
   id        String    @id @default(cuid())
-  memberId  String    @unique
   name      String?
   sex       String?
   updatedAt DateTime  @updatedAt

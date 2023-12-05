@@ -25,7 +25,6 @@ export const MemberEdit = (props: EditProps): React.ReactElement => {
         </ReferenceArrayInput>
         <TextInput label="age" source="age" />
         <TextInput label="email" source="email" type="email" />
-        <TextInput label="member_id" source="memberId" />
         <TextInput label="name" source="name" />
         <TextInput label="sex" source="sex" />
       </SimpleForm>

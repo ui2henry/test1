@@ -5,7 +5,6 @@ export type MemberOrderByInput = {
   createdAt?: SortOrder;
   email?: SortOrder;
   id?: SortOrder;
-  memberId?: SortOrder;
   name?: SortOrder;
   sex?: SortOrder;
   updatedAt?: SortOrder;

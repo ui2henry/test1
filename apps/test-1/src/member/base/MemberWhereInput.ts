@@ -66,17 +66,6 @@ class MemberWhereInput {
 
   @ApiProperty({
     required: false,
-    type: StringFilter,
-  })
-  @Type(() => StringFilter)
-  @IsOptional()
-  @Field(() => StringFilter, {
-    nullable: true,
-  })
-  memberId?: StringFilter;
-
-  @ApiProperty({
-    required: false,
     type: StringNullableFilter,
   })
   @Type(() => StringNullableFilter)
