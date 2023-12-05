@@ -17,3 +17,25 @@ model User {
   updatedAt DateTime @updatedAt
   username  String   @unique
 }
+
+model Member {
+  addresses Address[]
+  age       String?
+  createdAt DateTime  @default(now())
+  email     String?
+  id        String    @id @default(cuid())
+  memberId  String    @unique
+  name      String?
+  sex       String?
+  updatedAt DateTime  @updatedAt
+}
+
+model Address {
+  address1  String?
+  address2  String?
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  memberId  Member   @relation(fields: [member_id], references: [id])
+  member_id String   @unique
+  updatedAt DateTime @updatedAt
+}
